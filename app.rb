@@ -18,12 +18,11 @@ end
 get '/' do
   #CREATE Larry David DAILY
   @lddaily = Lddaily.new
-  @lddaily.quote = 'I don''t like talking to people I know, but strangers I have no problem with.'
+  @lddaily.quote = 'Let me tell you something. The Penis doesn''t care about race, creed, or skin color. The penis just wants to get to its homeland! It just wants to go home!'
   @lddaily.source = 'Larry David'
   @lddaily.save
   @lddaily.to_json
 end
-# 'let me tell you something. The Penis doesn''t care about race, creed, or skin color. The penis just wants to get to its homeland! It just wants to go home!'
 
   #GET: list
 get '/api/lddailies' do
@@ -45,6 +44,8 @@ post '/api/lddailies' do
 end
 
 #patch: update by ID
+# don't think i need to search by ID if I'm using this as a READ only...
+### The code that follows this may need to be deleted....
 patch '/api/lddailies/:id' do
   lddailies_args = { :quote => params[:quote], :source => params[:source]}
   puts lddailies_args
