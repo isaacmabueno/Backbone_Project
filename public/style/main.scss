@@ -32,12 +32,7 @@ h3 {
     border-radius: 2px solid black;
 }
 
-
-body {
-  background: #34495e;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  cursor: default;
+li {
+  list-style-type: none;
+  float: left;
 }

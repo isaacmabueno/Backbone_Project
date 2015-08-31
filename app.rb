@@ -16,9 +16,9 @@ end
 
 
 get '/' do
-  #CREATE Larry David DAILY
+  # CREATE Larry David DAILY
   # @lddaily = Lddaily.new
-  # @lddaily.quote = 'Let me tell you something. The Penis doesn''t care about race, creed, or skin color. The penis just wants to get to its homeland! It just wants to go home!'
+  # @lddaily.quote = 'Larry''s house has been spray painted by trick-or-treaters he has offended and he''s reporting it to cops] They don''t deserve candy and I don''t deserve this: "Bald Asshole"? That''s a hate crime!'
   # @lddaily.source = 'Larry David'
   # @lddaily.save
   # @lddaily.to_json

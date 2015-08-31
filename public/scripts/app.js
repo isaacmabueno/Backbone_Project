@@ -1,6 +1,34 @@
 $(document).ready(function() {
 
 
+    $.ajax({
+      method: "GET",
+      url: "/api/lddailies",
+      dataType:'json',
+
+      success: function(data) {
+        function randQuote(data) {
+          var all = data;
+          console.log(all)
+
+        // console.log(quote)
+        // var source = data[num].source;
+          $('#new-lddaily').on('click', function(){
+            var num = Math.floor(Math.random() * (31)) + 1;
+            var quote = all[num].quote;
+            $('#quote-list').html('<li>' + quote + "- Larry David" + '</li>');
+
+
+          });
+      }
+      randQuote(data);
+    }
+
+  });
+
+        // for (var i=0;i<31;i++) {
+          // var quote = data.larry.event[i];
+
 //name--------- spacing
 var larrysays = larrysays || {};
 var active = active || {};
@@ -35,18 +63,32 @@ larrysays.collectionView = Backbone.View.extend({
     this.$el.html('');
     //keeps it random
   },
-
-  render: function() {
-      this.$el.html('');
-      var collection = this.collection.models;
-      var random = _.sample(collection);
-      new larrysays.modelView({
-          el: $('#quote-list'),
-          model: random
-      });
-    },
+  // 
+  // render: function() {
+  //     this.$el.html('');
+  //     var collection = this.collection.models;
+  //     var random = _.template(collection);
+  //     new larrysays.modelView({
+  //         el: $('#quote-list'),
+  //         model: random
+  //     });
+  //   },
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // blueprints-- done
 //
 // $(document).ready(function(event) {
