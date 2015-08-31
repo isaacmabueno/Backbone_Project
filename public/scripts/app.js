@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+// $('h1').fadeIn(4000);
 
     $.ajax({
       method: "GET",
@@ -16,7 +17,7 @@ $(document).ready(function() {
           $('#new-lddaily').on('click', function(){
             var num = Math.floor(Math.random() * (31)) + 1;
             var quote = all[num].quote;
-            $('#ld-quote-list').html(quote + '<p>' + '<br>' + '<strong>' + "- Larry David" + '</strong>' + '</p>');
+            $('#ld-quote-list').html(quote + '<p>' + '<br>' + '<strong class="cursive">' + "- Larry David" + '</strong>' + '</p>');
 
 
           });
