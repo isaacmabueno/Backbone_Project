@@ -20,7 +20,10 @@ h1 {
   font-family: 'Economica' !important;
   font-size: 100px !important;
   color: #C49851 !important;
+  white-space: nowrap;/*Evitar saltos de línea*/
+
 }
+
 h3 {
   text-align: center;
 }
