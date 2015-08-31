@@ -16,7 +16,7 @@ $(document).ready(function() {
           $('#new-lddaily').on('click', function(){
             var num = Math.floor(Math.random() * (31)) + 1;
             var quote = all[num].quote;
-            $('#quote-list').html('<li>' + quote + "- Larry David" + '</li>');
+            $('#ld-quote-list').html(quote + '<p>' + '<br>' + '<strong>' + "- Larry David" + '</strong>' + '</p>');
 
 
           });
@@ -63,7 +63,7 @@ larrysays.collectionView = Backbone.View.extend({
     this.$el.html('');
     //keeps it random
   },
-  // 
+  //
   // render: function() {
   //     this.$el.html('');
   //     var collection = this.collection.models;

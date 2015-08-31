@@ -1,16 +1,17 @@
-.larry {
-  background-image: url('http://i.imgur.com/Fl7Cxlj.png?1');
-  height: 500px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+#larry {
+  height: 550px;
+  width: 50%;
+  display: inline block;
+
 }
 .btn-default {
   color: #333 !important;
   background-color: #77BF9D !important;
-  border-color: #333 !important;
-  margin-left: 45.3%;
+  border-color: black !important;
+  // margin-left: 45.3%;
+  font-family: 'Economica' !important;
+  margin-left: 24% !important;
+  margin-top: -10% !important;
 }
 body {
   background-color:rgba(255, 255, 0, 0.34) !important;
@@ -20,9 +21,9 @@ h1 {
   font-family: 'Economica' !important;
   font-size: 100px !important;
   color: #C49851 !important;
-  border: 5px solid #2b3c4e;
+  border: 5px solid rgba(#2b3c4e, 0.72);
   letter-spacing: 25px;
-
+  margin-top: 0px !important;
 }
 
 h3 {
@@ -32,7 +33,34 @@ h3 {
     border-radius: 2px solid black;
 }
 
-li {
+p {
   list-style-type: none;
   float: left;
+  color: #2b3c4e;
+  width: 90%;
+  margin-left: 5%;
+}
+// #ld-quote-list {
+//   background-color: #2b3c4e;
+//   height: 300px;
+//   width: 300px;
+// }
+#image {
+  display: inline-block;
+  float: right;
+  width: 60%;
+  margin-left: 5%;
+}
+#ld-quote-list {
+  width: 30%;
+  display: block;
+  float: right;
+  font-size: 35px;
+  font-family: 'Open Sans Condensed';
+  margin-top: 5%;
+  margin-right: 5%;
+}
+section {
+  width: 100%;
+
 }
