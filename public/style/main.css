@@ -1,14 +1,16 @@
 #larry {
-  height: 550px;
-  width: 50%;
-  display: inline block; }
+  height: 580px;
+  width: 100%;
+  display: inline block;
+  padding-left: 40%;
+  margin-top: -30px; }
 
 .btn-default {
   color: #333 !important;
   background-color: #77BF9D !important;
   border-color: black !important;
   font-family: 'Economica' !important;
-  margin-left: 24% !important;
+  margin-left: 35% !important;
   margin-top: -10% !important; }
 
 body {
@@ -39,8 +41,7 @@ p {
 #image {
   display: inline-block;
   float: right;
-  width: 60%;
-  margin-left: 5%; }
+  width: 60%; }
 
 #ld-quote-list {
   width: 30%;
@@ -48,8 +49,8 @@ p {
   float: right;
   font-size: 35px;
   font-family: 'Open Sans Condensed';
-  margin-top: 5%;
-  margin-right: 5%; }
+  margin-top: 3%;
+  margin-right: 2%; }
 
 section {
   width: 100%; }
