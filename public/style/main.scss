@@ -20,7 +20,8 @@ h1 {
   font-family: 'Economica' !important;
   font-size: 100px !important;
   color: #C49851 !important;
-  white-space: nowrap;/*Evitar saltos de línea*/
+  border: 5px solid #2b3c4e;
+  letter-spacing: 25px;
 
 }
 
@@ -29,4 +30,14 @@ h3 {
 }
 .wrapper3 {
     border-radius: 2px solid black;
+}
+
+
+body {
+  background: #34495e;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: default;
 }

@@ -6,8 +6,8 @@ ActiveRecord::Base.establish_connection(
   :database => 'larrydavid'
 )
 #set folder for template to.../views, but
- # set :views, File.expand_path('../views', __FILE__)
- # set :public, File.expand_path('../public', __FILE__)
+ set :views, File.expand_path('../views', __FILE__)
+ set :public, File.expand_path('../public', __FILE__)
 
 get '/ld_everyday' do
   erb :ld_everyday
