@@ -2,8 +2,8 @@ CREATE DATABASE larrydavid;
 \c larrydavid;
 
 CREATE TABLE lddailies (id SERIAL PRIMARY KEY, quote VARCHAR(255), source VARCHAR(255));
-INSERT INTO lddailies (quote, source) VALUES ("Anyone can be confident with a full head of hair. But a confident bald man - there''s your diamond in the rough.", "Larry David"
-INSERT INTO lddailies (quote, source) VALUES ("I''m married. I can wear whatever I want.", "Larry David");
+INSERT INTO lddailies (quote, source) VALUES ('Anyone can be confident with a full head of hair. But a confident bald man - there\'s your diamond in the rough.', 'Larry David');
+INSERT INTO lddailies (quote, source) VALUES ('I''m married. I can wear whatever I want', 'Larry David');
 INSERT INTO lddailies (quote, source) VALUES ("I''m available for sex all the time, basically.....Just assume that I want it all the time. So whenever you want it, just tap me on the shoulder.", "Larry David");
 INSERT INTO lddailies (quote, source) VALUES ("I don''t particularly like children, you know, that''s why I dont have any, but I love being called Daddy.", "Larry David");
 INSERT INTO lddailies (quote, source) VALUES ("Jews buy, like, 85% of the sun block that''s sold in this country, don''t you think?", "Larry David");
