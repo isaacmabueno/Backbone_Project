@@ -1,8 +1,8 @@
 # Backbone_Project- LD- EVERYDAY
 **SCREEN SHOTS**
-![alt image] (http://i.imgur.com/25M332i.png);
-![alt image] (http://i.imgur.com/2NZ9AUB.png);
-![alt image] (http://i.imgur.com/8LNDBLl.png);
+![alt image] (http://i.imgur.com/25M332i.png)
+![alt image] (http://i.imgur.com/2NZ9AUB.png)
+![alt image] (http://i.imgur.com/8LNDBLl.png)
 **SUMMARY:** A full stack application in Sinatra using Backbone.js.
 This is the readme.md file for LD-EVERYDAY. A fun source for getting randomly generated Larry David quotes. The purpose of this application is to simply display an example of rending data through a RESTful API that I built. The RESTful API was built from data I collected from IMDB.
 **PURPOSE:** The purpose of this website is to use Backbone.js to render data through the RESTful API.
