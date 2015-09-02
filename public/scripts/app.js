@@ -75,6 +75,12 @@ larrysays.collectionView = Backbone.View.extend({
   //     });
   //   },
   });
+  $.ajaxSetup({
+    beforeSend: function(xhr){
+      xhr.setRequestHeader('X-API-KEY', globalkey)
+    }
+  });
+
 });
 
 

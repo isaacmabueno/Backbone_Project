@@ -30,7 +30,7 @@ end
 
   #GET: list(all)
 get '/api/lddailies' do
-  Lddaily.all.to_json
+     Lddaily.all.to_json
 end
 
 #GET: by id
@@ -38,20 +38,24 @@ get '/api/lddailies/:id' do
   Lddaily.find(params[:id]).to_json
 end
 
-# post
+# post/create
 # dont think i need this post function
 post '/api/lddailies' do
+request_body = JSON.parse request.body.read.to_s
 
   @is_authorized = false;
-  if params[:api_key].nil? == false && params[:api_key] == ENV[API_KEY]
-   @is_authorized = true
-  end
-  if @is_authorized == false
-   return {:status => '403', :message => 'not authorized'}.to_json
-  end
-
-  request_body = JSON.parse request.body.read.to_s
-  Ld
+     if env['HTTP_X_API_KEY'].nil? == false && env['HTTP_X_API_KEY'] == ENV['API_KEY']
+       @is_authorized = true
+     end
+     if @is_authorized == false
+       return_message = {
+         :status => 'error',
+         :message => "Invalid API key"
+       }
+       halt 401, {
+         'Content-Type' => 'application/json'
+       }, return_message.to_json
+     end
   puts params
   Lddaily.create({
     :quote => params[:quote],
@@ -65,12 +69,18 @@ end
 patch '/api/lddailies/:id' do
 
   @is_authorized = false;
-  if params[:api_key].nil? == false && params[:api_key] == ENV[API_KEY]
-   @is_authorized = true
-  end
-  if @is_authorized == false
-   return {:status => '403', :message => 'not authorized'}.to_json
-  end
+     if env['HTTP_X_API_KEY'].nil? == false && env['HTTP_X_API_KEY'] == ENV['API_KEY']
+       @is_authorized = true
+     end
+     if @is_authorized == false
+       return_message = {
+         :status => 'error',
+         :message => "Invalid API key"
+       }
+       halt 401, {
+         'Content-Type' => 'application/json'
+       }, return_message.to_json
+     end
 
   request_body = JSON.parse(request.body.read.to_s)
   @id = params[:id]
@@ -84,12 +94,18 @@ end
 put '/api/lddailies/:id' do
 
   @is_authorized = false;
-  if params[:api_key].nil? == false && params[:api_key] == ENV[API_KEY]
-   @is_authorized = true
-  end
-  if @is_authorized == false
-   return {:status => '403', :message => 'not authorized'}.to_json
-  end
+     if env['HTTP_X_API_KEY'].nil? == false && env['HTTP_X_API_KEY'] == ENV['API_KEY']
+       @is_authorized = true
+     end
+     if @is_authorized == false
+       return_message = {
+         :status => 'error',
+         :message => "Invalid API key"
+       }
+       halt 401, {
+         'Content-Type' => 'application/json'
+       }, return_message.to_json
+     end
 
   request_body = JSON.parse(request.body.read.to_s)
   @id = params[:id]
@@ -103,12 +119,18 @@ end
 delete '/api/lddailies/:id' do
 
   @is_authorized = false;
-  if params[:api_key].nil? == false && params[:api_key] == ENV[API_KEY]
-   @is_authorized = true
-  end
-  if @is_authorized == false
-   return {:status => '403', :message => 'not authorized'}.to_json
-  end
+     if env['HTTP_X_API_KEY'].nil? == false && env['HTTP_X_API_KEY'] == ENV['API_KEY']
+       @is_authorized = true
+     end
+     if @is_authorized == false
+       return_message = {
+         :status => 'error',
+         :message => "Invalid API key"
+       }
+       halt 401, {
+         'Content-Type' => 'application/json'
+       }, return_message.to_json
+     end
 
   Lddaily.destroy(params[:id]).to_json
 end

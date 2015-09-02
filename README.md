@@ -34,14 +34,4 @@ This is the readme.md file for LD-EVERYDAY. A fun source for getting randomly ge
 ![alt image] (http://i.imgur.com/cVQcqAs.jpg);
 **VERSION 2.0 will include:** more styling, more quotes (by category), more Larry David Chaos!
 
-#this application was created by Isaac Bueno
-
-Request.body
-Client Side
-
-Server Side
-Created a Database & Migration files
-Single Model
-API Authentication
-enables CORS
-tested with Cocoa REST
+###this application was created by Isaac Bueno
