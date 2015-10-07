@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-// $('h1').fadeIn(4000);
-
     $.ajax({
       method: "GET",
       url: "/api/lddailies",
@@ -15,7 +13,7 @@ $(document).ready(function() {
         // console.log(quote)
         // var source = data[num].source;
           $('#new-lddaily').on('click', function(){
-            var num = Math.floor(Math.random() * (31)) + 1;
+            var num = Math.floor(Math.random() * (31));
             var quote = all[num].quote;
             $('#ld-quote-list').html(quote + '<p>' + '<br>' + '<strong class="cursive">' + "- Larry David" + '</strong>' + '</p>');
 
@@ -30,12 +28,11 @@ $(document).ready(function() {
         // for (var i=0;i<31;i++) {
           // var quote = data.larry.event[i];
 
-//name--------- spacing
+//name--------- spacing..........
 var larrysays = larrysays || {};
-var active = active || {};
 
 
-// some blueprints
+// some blueprints.............
 larrysays.model = Backbone.Model.extend();
 larrysays.collection = Backbone.Collection.extend({
   model: larrysays.model,
