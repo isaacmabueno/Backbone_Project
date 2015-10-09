@@ -39,7 +39,7 @@ get '/api/lddailies/:id' do
 end
 
 # post/create
-# dont think i need this post function
+# dont necessary need this unless I auth the app
 post '/api/lddailies' do
 request_body = JSON.parse request.body.read.to_s
 

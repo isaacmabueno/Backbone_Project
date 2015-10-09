@@ -25,9 +25,6 @@ $(document).ready(function() {
 
   });
 
-        // for (var i=0;i<31;i++) {
-          // var quote = data.larry.event[i];
-
 //name--------- spacing..........
 var larrysays = larrysays || {};
 
@@ -79,27 +76,3 @@ larrysays.collectionView = Backbone.View.extend({
   });
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// blueprints-- done
-//
-// $(document).ready(function(event) {
-//     //instantiate collection + collectionView
-//     active.collection = new larrysays.collection();
-//     active.collectionView = new larrysays.collectionView({
-//       collection: active.collection,
-//       el: $('#quote-list')
-//     });
-// });
