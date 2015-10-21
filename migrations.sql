@@ -2,7 +2,7 @@ CREATE DATABASE larrydavid;
 \c larrydavid;
 
 CREATE TABLE lddailies (id SERIAL PRIMARY KEY, quote VARCHAR(255), source VARCHAR(255));
-INSERT INTO lddailies (quote, source) VALUES ('Anyone can be confident with a full head of hair. But a confident bald man - there\'s your diamond in the rough.', 'Larry David');
+INSERT INTO lddailies (quote, source) VALUES ('Anyone can be confident with a full head of hair. But a confident bald man - there''s your diamond in the rough.', 'Larry David');
 INSERT INTO lddailies (quote, source) VALUES ('I''m married. I can wear whatever I want', 'Larry David');
 INSERT INTO lddailies (quote, source) VALUES ('I''m available for sex all the time, basically.....Just assume that I want it all the time. So whenever you want it, just tap me on the shoulder.', 'Larry David');
 INSERT INTO lddailies (quote, source) VALUES ('I don''t particularly like children, you know, that''s why I dont have any, but I love being called Daddy.', 'Larry David');
@@ -34,4 +34,4 @@ INSERT INTO lddailies (quote, source) VALUES ('Larrys house has been spray paint
 INSERT INTO lddailies (quote, source) VALUES('With all due respect, Officer Berg, you are not bald. You have chosen to shave your hair and that’s a look you’re cultivating in order to look fashionable, but we don’t really consider you part of the bald community…with all due respect.', 'Larry David');
 INSERT INTO lddailies (quote, source) VALUES ('Nobody likes to fly. I don''t even like to drive. And I don''t like walking.', 'Larry David');
 INSERT INTO lddailies (quote, source) VALUES ('You''re saying LOL, you''re verbal texting.', 'Larry David');
-INSERT INTO lddailies (quote, source) VALUES('What is this compulsion to have people over your house and serve them food and talk to them? What a strange thing.', 'Larry David')
+INSERT INTO lddailies (quote, source) VALUES('What is this compulsion to have people over your house and serve them food and talk to them? What a strange thing.', 'Larry David');
